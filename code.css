@@ -1,0 +1,121 @@
+/* fantasquesansmono-bold.otf
+fantasquesansmono-bolditalic.otf
+fantasquesansmono-italic.otf
+fantasquesansmono-regular.otf */
+
+@font-face {
+    font-family: fantasquesansmono-bold;
+    src: url(Script/font/fantasquesansmono-bold.otf);
+}
+@font-face {
+    font-family: fantasquesansmono-bolditalic;
+    src: url(Script/font/fantasquesansmono-bolditalic.otf);
+}
+@font-face {
+    font-family: fantasquesansmono-italic;
+    src: url(Script/font/fantasquesansmono-italic.otf);
+}
+@font-face {
+    font-family: fantasquesansmono-regular;
+    src: url(Script/font/fantasquesansmono-regular.otf);
+}
+/* html{
+    background: #100a1c;
+    background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
+} */
+
+body{
+    font-family: fantasquesansmono-regular;
+    font-size: medium;
+    text-align: center;
+    background: #100a1c;
+    background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
+    /* background-color: #282C34;
+    color: #ABB2BF; */
+}
+
+#logo{
+    /*background-color: #BE5046;*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#windows{
+    display: inline-block;
+    width: 96px;
+    fill: #4B5263;    
+}
+
+#code{
+    font-size: medium;
+    margin-top: 20px;
+}
+
+.a{
+    font-size: medium;
+    margin-top: 20px;
+}
+
+
+#detail{
+    /*background-color: aqua;*/
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: smaller;
+    color: #5C6370;
+    font-weight: 500;
+}
+
+#name{
+    font-weight: 900;
+    color: #ABB2BF;
+}
+
+#heart{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill:  #BE5046;
+}
+
+#color{
+    margin-top: 10px;
+    font-size: x-large;
+    animation: blinkShadow 2s  ease-in  infinite ;
+}
+
+@keyframes blinkShadow {  
+    0%{ text-shadow: 0 0 2px}  
+    50%{ text-shadow: 0 0 20px}  
+    100%{ text-shadow: 0 0 2px}  
+}
+
+.blue{
+    color: #61AFEF;
+}
+.magenta{
+    color: #C678DB;
+}
+.green{
+    color: #98C379;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.blink{
+    animation: blink 1s linear infinite;  
+}
